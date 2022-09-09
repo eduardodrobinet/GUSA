@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/main_view"
+    android:layout_centerInParent="true">
+
+    <TextView
+        android:id="@+id/search_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:text="@string/gusa_input"
+        tools:ignore="HardcodedText"
+        tools:layout_editor_absoluteX="122dp"
+        tools:layout_editor_absoluteY="108dp" />
+
+    <EditText
+    android:id="@+id/numberinput"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:autofillHints="Numero Reclamo"
+    android:ems="10"
+    android:layout_gravity="center_vertical"
+    android:inputType="text"
+    android:labelFor="@+id/search_number"
+    android:minHeight="48dp"
+    tools:layout_editor_absoluteX="83dp"
+    tools:layout_editor_absoluteY="159dp" tools:ignore="LabelFor" />
+
+    <TextView
+        android:id="@+id/reclaim_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        tools:layout_editor_absoluteX="97dp"
+        tools:layout_editor_absoluteY="240dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="127dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:layout_marginStart="20dp"
+        android:text="@string/button" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="127dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        android:onClick="onClickTwo"
+        android:text="@string/button1"
+        tools:ignore="DuplicateIds" />
+
+</LinearLayout>
